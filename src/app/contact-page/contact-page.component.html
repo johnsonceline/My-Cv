@@ -1,0 +1,104 @@
+<head>
+    <title>Contact Form Design</title>
+<style>
+    body{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: linear-gradient(rgba(102, 5, 97, 0.137),rgba(207, 91, 149, 0.5));
+      background-size: cover;
+      background-position: center;
+      font-family:sans-serif;
+      
+    
+    }
+
+    
+
+
+    contact-title{
+      margin-top: 100px;
+      color: rgba(214, 20, 188, 0.575);
+      text-transform: uppercase;
+      transition: all 4s ease-in-out;
+    }
+    contact-title h1{
+      font-size: 32px;
+      line-height: 10px;
+    }
+    contact-title h2{
+      font-size: 16px;
+    }
+form{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+      height: 75vh
+
+}
+
+form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px
+}
+
+input{
+  height: 35px;
+}
+
+form-submit{
+  background: #ff5722;
+  border-color: transparent;
+  color: rgba(141, 12, 72, 0.164);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+form-submit:hover{
+  background-color: #da2479;
+  cursor: pointer;
+}
+
+
+  </style>
+  </head>
+<body>
+
+
+  
+
+  <div class="contact-title">
+    <h1>Celine Johnson</h1>
+  
+    <a routerLink="/about">HOME</a>
+
+  </div>
+
+  <div class="contact form">
+
+    <form id="contact-form" method="post" action=""><br>
+      <fieldset> 
+
+        <legend>Contact Me:</legend>
+
+
+      <br><input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+
+      <br><input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+
+<br><textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+
+<br><input type="submit" class="form-control submit" value="SEND MESSAGE"><br>
+
+</fieldset>
+</form>
+
+
+  </div>
